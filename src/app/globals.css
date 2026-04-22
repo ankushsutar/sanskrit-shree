@@ -1,38 +1,43 @@
 @import "tailwindcss";
 
 @theme {
-  --color-gold: #e4b632;
-  --color-saffron: #ff7c11;
-  --color-vermillion: #b71c1c;
-  --color-temple: #110f13;
-  --color-background: #0d0c11;
+  --color-peacock: #1A4B6E;
+  --color-gold: #D4A017;
+  --color-maroon: #800000;
+  --color-cream: #FDFBF7;
+  --color-background: #FDFBF7;
+  --color-foreground: #1A4B6E;
 
-  --font-cinzel: var(--font-cinzel);
+  --font-cairo: var(--font-cairo);
   --font-noto: var(--font-noto);
-  --font-cormorant: var(--font-cormorant);
+  --font-cairo: var(--font-cairo);
+  --font-cairo: var(--font-cairo);
 
-  --shadow-gold: 0 0 20px rgba(228, 182, 50, 0.4);
-  --shadow-saffron: 0 0 20px rgba(255, 124, 17, 0.4);
+  --shadow-peacock: 0 0 20px rgba(26, 75, 110, 0.2);
+  --shadow-gold: 0 0 20px rgba(212, 160, 23, 0.2);
+
+  /* Ogani-style Grid Utilities */
+  --container-max-width: 1170px;
+  --header-height: 100px;
 }
 
 :root {
-  --background: #0d0c11;
-  --foreground: #f4f1ea;
-  /* Aged Paper White */
-  --gold: #e4b632;
-  --saffron: #ff7c11;
-  --vermillion: #b71c1c;
+  --background: #FDFBF7;
+  --foreground: #1A4B6E;
+  --peacock: #1A4B6E;
+  --gold: #D4A017;
+  --maroon: #800000;
+  --cream: #FDFBF7;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-cormorant), serif;
+  font-family: var(--font-cairo), sans-serif;
   overflow-x: hidden;
-  background-image:
-    radial-gradient(circle at 50% 50%, rgba(255, 124, 17, 0.05) 0%, transparent 70%),
-    url("https://www.transparenttextures.com/patterns/dark-matter.png");
-  /* Subtle texture */
+  background-image: 
+    radial-gradient(circle at 100% 0%, rgba(26, 75, 110, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 0% 100%, rgba(212, 160, 23, 0.03) 0%, transparent 50%);
 }
 
 @layer base {
@@ -43,7 +48,7 @@ body {
   h4,
   h5,
   h6 {
-    font-family: var(--font-cinzel), serif;
+    font-family: var(--font-cairo), sans-serif;
     letter-spacing: 0.05em;
   }
 }
@@ -74,6 +79,57 @@ body {
     opacity: 0.15;
     pointer-events: none;
     user-select: none;
+  }
+
+  /* Ogani-inspired Components */
+  .ogani-container {
+    width: 100%;
+    max-width: var(--container-max-width);
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .btn-sacred {
+    display: inline-block;
+    padding: 13px 30px;
+    color: white;
+    background: var(--maroon);
+    font-weight: 700;
+    font-family: var(--font-cairo);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    border-radius: 0;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn-sacred:hover {
+    background: var(--gold);
+    color: var(--maroon);
+    box-shadow: var(--shadow-gold);
+  }
+
+  .btn-sacred-outline {
+    display: inline-block;
+    padding: 13px 30px;
+    color: var(--maroon);
+    background: transparent;
+    border: 2px solid var(--maroon);
+    font-weight: 700;
+    font-family: var(--font-cairo);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    transition: all 0.3s;
+  }
+
+  .btn-sacred-outline:hover {
+    background: var(--maroon);
+    color: white;
   }
 }
 

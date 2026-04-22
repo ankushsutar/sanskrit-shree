@@ -65,9 +65,9 @@ export function FeaturedSongs() {
     if (!isMounted) return null;
 
     return (
-        <section id="songs" className="py-24 px-6 relative bg-temple overflow-hidden">
+        <section id="songs" className="py-24 px-6 relative bg-white overflow-hidden">
             {/* Subtle background shlokas */}
-            <div className="absolute top-0 left-0 w-full h-full sacred-text flex items-center justify-center -z-10 text-[15vw] opacity-[0.02]">
+            <div className="absolute top-0 left-0 w-full h-full sacred-text flex items-center justify-center -z-10 text-[15vw] opacity-[0.03] text-peacock">
                 संस्कृतम्
             </div>
 
@@ -79,8 +79,8 @@ export function FeaturedSongs() {
                         viewport={{ once: true }}
                         className="flex flex-col items-center"
                     >
-                        <span className="font-noto text-saffron font-bold text-xl mb-2 tracking-[0.2em]">श्रेष्ठ रचनाः</span>
-                        <h2 className="text-4xl md:text-5xl font-bold font-cinzel text-white mb-4">
+                        <span className="font-noto text-maroon font-bold text-xl mb-2 tracking-[0.2em]">श्रेष्ठ रचनाः</span>
+                        <h2 className="text-4xl md:text-5xl font-bold font-cairo text-peacock mb-4">
                             Featured Compositions
                         </h2>
                         <div className="w-48 h-px bg-gradient-to-r from-transparent via-gold to-transparent" />
@@ -97,40 +97,37 @@ export function FeaturedSongs() {
                             transition={{ delay: index * 0.1 }}
                             className="group relative"
                         >
-                            <div className="absolute -inset-0.5 bg-gradient-to-b from-gold/20 to-saffron/10 rounded-lg blur opacity-0 group-hover:opacity-100 transition duration-1000 group-hover:duration-200" />
+                            <div className="absolute -inset-0.5 bg-gradient-to-b from-peacock/10 to-maroon/5 rounded-[2rem] blur opacity-0 group-hover:opacity-100 transition duration-1000 group-hover:duration-200" />
 
-                            <div className="relative h-full manuscript p-8 rounded-lg border border-gold/10 group-hover:border-gold/30 transition-all duration-500 flex flex-col">
+                            <div className="relative h-full bg-cream p-8 rounded-[2rem] border border-peacock/5 group-hover:border-peacock/20 transition-all duration-500 flex flex-col shadow-sm group-hover:shadow-xl">
                                 {/* Decorative Corner Motifs */}
-                                <div className="absolute top-0 right-0 p-4 font-noto text-gold/10 group-hover:text-gold/20 text-3xl transition-colors select-none">ॐ</div>
-                                <div className="absolute bottom-0 left-0 p-4 font-noto text-gold/10 group-hover:text-gold/20 text-3xl transition-colors select-none">ॐ</div>
-
+                                <div className="absolute top-0 right-0 p-6 font-noto text-gold/20 group-hover:text-gold/40 text-2xl transition-colors select-none">ॐ</div>
+                                
                                 <div className="flex items-center justify-between mb-8">
-                                    <span className="bg-saffron/10 text-saffron px-4 py-1.5 rounded-sm text-[10px] font-bold tracking-widest border border-saffron/20 uppercase">
+                                    <span className="bg-maroon/5 text-maroon px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest border border-maroon/10 uppercase">
                                         {song.badge}
                                     </span>
-                                    <div className="w-10 h-10 border border-gold/20 rounded-full flex items-center justify-center group-hover:border-gold/50 transition-colors">
-                                        <ArrowRight size={18} className="text-gold" />
+                                    <div className="w-10 h-10 border border-peacock/10 rounded-full flex items-center justify-center group-hover:border-peacock/30 transition-colors">
+                                        <ArrowRight size={18} className="text-maroon" />
                                     </div>
                                 </div>
 
                                 <div className="mb-8">
-                                    <h3 className="font-noto text-3xl font-bold text-white mb-2 group-hover:text-gold transition-colors">
+                                    <h3 className="font-noto text-3xl font-bold text-peacock mb-2 group-hover:text-maroon transition-colors">
                                         {song.sanskrit}
                                     </h3>
-                                    <p className="font-cinzel text-sm text-gold/60 tracking-wider font-bold">
+                                    <p className="font-cairo text-sm text-peacock/60 tracking-wider font-bold">
                                         {song.original} <span className="text-[10px] ml-2 opacity-50 tracking-tighter">— {song.artist.toUpperCase()}</span>
                                     </p>
                                 </div>
 
-                                <div className="relative py-6 mb-8 mt-auto border-y border-gold/5">
-                                    <span className="absolute -top-3 left-1/2 -translate-x-1/2 text-[10px] text-gold/40 bg-temple px-2 font-noto">श्लोकः</span>
-                                    <p className="font-noto text-lg text-white/80 italic leading-relaxed text-center group-hover:text-white transition-colors">
+                                <div className="relative py-6 mb-8 mt-auto border-y border-peacock/5">
+                                    <p className="font-noto text-lg text-peacock/80 italic leading-relaxed text-center group-hover:text-peacock transition-colors">
                                         "{song.excerpt}"
                                     </p>
                                 </div>
 
-                                <button className="w-full py-4 border border-gold/20 rounded-sm font-cinzel text-xs font-black tracking-[0.3em] uppercase text-gold/60 group-hover:text-white group-hover:bg-gold/10 group-hover:border-gold transition-all duration-500">
-                                    <span className="block font-noto text-[10px] mb-1 opacity-50 group-hover:opacity-100">पूर्णरचनां पठन्तु</span>
+                                <button className="w-full py-4 bg-white border border-peacock/10 rounded-full font-cairo text-[10px] font-black tracking-[0.3em] uppercase text-peacock group-hover:text-white group-hover:bg-maroon group-hover:border-maroon transition-all duration-500 shadow-sm">
                                     Read Full Composition
                                 </button>
                             </div>
@@ -140,10 +137,11 @@ export function FeaturedSongs() {
             </div>
 
             <div className="mt-20 text-center">
-                <button className="font-cinzel text-saffron font-bold text-sm tracking-[0.4em] uppercase border-b border-saffron/20 pb-2 hover:text-white hover:border-white transition-all">
+                <button className="font-cairo text-maroon font-bold text-sm tracking-[0.4em] uppercase border-b-2 border-maroon/20 pb-2 hover:text-peacock hover:border-peacock transition-all">
                     View Entire Archives
                 </button>
             </div>
         </section>
     );
 }
+

@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Cinzel_Decorative, Noto_Sans_Devanagari, Cormorant_Garamond } from "next/font/google";
+import { Cinzel_Decorative, Noto_Sans_Devanagari, Cormorant_Garamond, Cairo } from "next/font/google";
 import "./globals.css";
 
 const cinzel = Cinzel_Decorative({
     subsets: ["latin"],
     weight: ["400", "700", "900"],
-    variable: "--font-cinzel",
+    variable: "--font-cairo",
 });
 
 const noto = Noto_Sans_Devanagari({
@@ -17,8 +17,18 @@ const noto = Noto_Sans_Devanagari({
 const cormorant = Cormorant_Garamond({
     subsets: ["latin"],
     weight: ["300", "400", "500", "600", "700"],
-    variable: "--font-cormorant",
+    variable: "--font-cairo",
 });
+
+const cairo = Cairo({
+    subsets: ["latin"],
+    weight: ["200", "300", "400", "600", "700", "800", "900"],
+    variable: "--font-cairo",
+});
+
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
+import LeadCapture from "@/components/LeadCapture";
 
 export const metadata: Metadata = {
     title: "Sanskrit Shree | Where Every Song Finds Its Ancient Soul",
@@ -33,10 +43,14 @@ export default function RootLayout({
     return (
         <html lang="en" className="scroll-smooth">
             <body
-                className={`${cinzel.variable} ${noto.variable} ${cormorant.variable} antialiased bg-background text-white selection:bg-gold/30`}
+                className={`${cinzel.variable} ${noto.variable} ${cormorant.variable} ${cairo.variable} antialiased bg-background text-foreground selection:bg-gold/30 uppercase`}
             >
+                <Navbar />
                 {children}
+                <LeadCapture />
+                <Footer />
             </body>
         </html>
     );
 }
+

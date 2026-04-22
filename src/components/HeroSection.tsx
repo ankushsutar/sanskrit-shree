@@ -61,7 +61,7 @@ export function HeroSection() {
                         >
                             संस्कृत श्री:
                         </motion.span>
-                        <h1 className="text-7xl md:text-9xl font-black font-cinzel text-white tracking-widest leading-none drop-shadow-[0_0_30px_rgba(255,124,17,0.3)]">
+                        <h1 className="text-7xl md:text-9xl font-black font-cairo text-white tracking-widest leading-none drop-shadow-[0_0_30px_rgba(255,124,17,0.3)]">
                             Sanskrit Shree
                         </h1>
                     </div>
@@ -75,7 +75,7 @@ export function HeroSection() {
                         <p className="font-noto text-lg md:text-xl text-gold italic opacity-60 max-w-2xl px-4">
                             "यत्र प्रत्येकं गीतिका स्वप्राचीनप्राणं विन्दति"
                         </p>
-                        <p className="text-xl md:text-2xl font-cormorant italic text-white/80 tracking-wide">
+                        <p className="text-xl md:text-2xl font-cairo italic text-white/80 tracking-wide">
                             Where Every Song Finds Its Ancient Soul
                         </p>
                     </motion.div>
@@ -85,7 +85,7 @@ export function HeroSection() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 1.5, duration: 1.5 }}
-                    className="text-lg md:text-xl font-cormorant text-white/50 mb-12 leading-relaxed max-w-3xl mx-auto border-shastra py-6"
+                    className="text-lg md:text-xl font-cairo text-white/50 mb-12 leading-relaxed max-w-3xl mx-auto border-shastra py-6"
                 >
                     We breathe new life into beloved global melodies through the eternal resonance of Sanskrit.
                     <span className="block mt-2 text-saffron/70 font-noto tracking-wider text-sm">
@@ -103,7 +103,7 @@ export function HeroSection() {
                         <div className="absolute inset-0 bg-saffron opacity-90 group-hover:opacity-100 transition-opacity" />
                         <div className="relative flex flex-col items-center">
                             <span className="font-noto text-[10px] text-temple font-bold mb-0.5 tracking-tighter">रचनाः अन्विष्यन्ताम्</span>
-                            <span className="font-cinzel text-temple font-black text-lg tracking-widest">Explore Songs</span>
+                            <span className="font-cairo text-temple font-black text-lg tracking-widest">Explore Songs</span>
                         </div>
                     </button>
 
@@ -111,7 +111,7 @@ export function HeroSection() {
                         <div className="absolute inset-0 bg-gold/5 opacity-0 group-hover:opacity-100 transition-opacity" />
                         <div className="relative flex flex-col items-center">
                             <span className="font-noto text-[10px] text-gold font-bold mb-0.5 tracking-tighter">गीतं समर्प्यताम्</span>
-                            <span className="font-cinzel text-white font-bold text-lg tracking-widest">Submit a Song</span>
+                            <span className="font-cairo text-white font-bold text-lg tracking-widest">Submit a Song</span>
                         </div>
                     </button>
                 </motion.div>
@@ -129,3 +129,4 @@ export function HeroSection() {
         </section>
     );
 }
+

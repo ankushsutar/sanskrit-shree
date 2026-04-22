@@ -38,7 +38,7 @@ export function AboutMission() {
                     <h3 className="font-noto text-3xl md:text-5xl font-bold text-saffron mb-6 leading-relaxed neon-saffron">
                         "किं तद् गीतं यत्र न <span className="text-white">संस्कृतं</span> स्वरितम्"
                     </h3>
-                    <p className="font-cormorant italic text-xl md:text-2xl text-white/50 border-t border-gold/10 pt-6 mt-6">
+                    <p className="font-cairo italic text-xl md:text-2xl text-white/50 border-t border-gold/10 pt-6 mt-6">
                         "What is that melody where the resonance of Sanskrit remains unheard?"
                     </p>
                 </motion.div>
@@ -51,11 +51,11 @@ export function AboutMission() {
                     className="max-w-4xl mx-auto mb-20"
                 >
                     <span className="font-noto text-saffron font-bold text-xl tracking-[0.3em] block mb-2">अस्माकं लक्ष्यम्</span>
-                    <h2 className="font-cinzel text-5xl md:text-6xl font-black text-white mb-10 tracking-widest uppercase">
+                    <h2 className="font-cairo text-5xl md:text-6xl font-black text-white mb-10 tracking-widest uppercase">
                         Our Mission
                     </h2>
 
-                    <p className="font-cormorant text-xl md:text-2xl text-white/70 leading-relaxed mb-12 text-center">
+                    <p className="font-cairo text-xl md:text-2xl text-white/70 leading-relaxed mb-12 text-center">
                         Sanskrit is not a silent relic of the past; it is the <span className="text-gold font-bold">eternal soul</span> of sound.
                         At <span className="text-gold">Sanskrit Shree</span>, we bridge the sacred gap between ancient classical literature and
                         modern global rhythms. We believe the "Mother of all Languages" deserves to be heard in every contemporary
@@ -86,8 +86,8 @@ export function AboutMission() {
                             className="text-center p-8 border border-gold/5 hover:border-gold/20 transition-all duration-500 bg-gold/5 rounded-sm"
                         >
                             <span className="font-noto text-xs text-saffron/40 block mb-2 tracking-[0.4em] uppercase">{item.sanskrit}</span>
-                            <h4 className="font-cinzel text-gold text-xl font-black mb-4 tracking-wider uppercase">{item.title}</h4>
-                            <p className="font-cormorant text-white/50 leading-relaxed text-sm lg:text-base">{item.desc}</p>
+                            <h4 className="font-cairo text-gold text-xl font-black mb-4 tracking-wider uppercase">{item.title}</h4>
+                            <p className="font-cairo text-white/50 leading-relaxed text-sm lg:text-base">{item.desc}</p>
                         </motion.div>
                     ))}
                 </div>
@@ -95,3 +95,4 @@ export function AboutMission() {
         </section>
     );
 }
+

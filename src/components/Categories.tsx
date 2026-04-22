@@ -35,11 +35,11 @@ export function Categories() {
                         className="flex flex-col items-center"
                     >
                         <span className="font-noto text-saffron font-bold text-xl mb-2 tracking-[0.2em]">भाषा-वर्गाः</span>
-                        <h2 className="text-4xl md:text-5xl font-bold font-cinzel text-white mb-4">
+                        <h2 className="text-4xl md:text-5xl font-bold font-cairo text-white mb-4">
                             Browse by Language
                         </h2>
                         <div className="w-48 h-px bg-gradient-to-r from-transparent via-gold to-transparent mb-6" />
-                        <p className="font-cormorant italic text-white/50 max-w-xl mx-auto">
+                        <p className="font-cairo italic text-white/50 max-w-xl mx-auto">
                             Explore songs by their original linguistic soul, reimagined in the language of the Gods.
                         </p>
                     </motion.div>
@@ -66,14 +66,14 @@ export function Categories() {
                                     <cat.icon className="text-gold/40 group-hover:text-saffron transition-colors" size={32} />
                                 </div>
 
-                                <h3 className="font-cinzel text-sm font-black text-white mb-1 tracking-widest uppercase">
+                                <h3 className="font-cairo text-sm font-black text-white mb-1 tracking-widest uppercase">
                                     {cat.name}
                                 </h3>
                                 <p className="font-noto text-saffron text-lg font-bold mb-4">
                                     {cat.sanskrit}
                                 </p>
 
-                                <span className="font-cormorant text-white/30 text-[10px] uppercase tracking-[0.2em]">
+                                <span className="font-cairo text-white/30 text-[10px] uppercase tracking-[0.2em]">
                                     {cat.count} रचनाः
                                 </span>
                             </div>
@@ -84,3 +84,4 @@ export function Categories() {
         </section>
     );
 }
+
