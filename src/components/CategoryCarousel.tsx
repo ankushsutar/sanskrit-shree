@@ -5,10 +5,10 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 const categories = [
-    { title: "Sanskrit Covers", image: "https://img.youtube.com/vi/KQjo6a8mylA/maxresdefault.jpg", href: "/media" },
-    { title: "Courses", image: "/category_items_grid_1776879288073.png", href: "/courses" },
-    { title: "Publications", image: "/category_items_grid_1776879288073.png", href: "/shop" },
-    { title: "Live Drama", image: "https://img.youtube.com/vi/3NjQN4up2v8/maxresdefault.jpg", href: "/media" },
+    { title: "Sanskrit Covers", image: "https://img.youtube.com/vi/KQjo6a8mylA/hqdefault.jpg", href: "/media" },
+    { title: "Courses", image: "https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&q=80", href: "/courses" },
+    { title: "Publications", image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&q=80", href: "/shop" },
+    { title: "Live Drama", image: "https://img.youtube.com/vi/3NjQN4up2v8/hqdefault.jpg", href: "/media" },
 ];
 
 export default function CategoryCarousel() {
