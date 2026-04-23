@@ -23,11 +23,11 @@ const posts = [
     },
     {
         id: 3,
-        title: "Sanskrit: The Language of the Gods",
-        excerpt: "Exploring why Sanskrit is considered the most mathematically perfect language on Earth.",
-        date: "April 28, 2026",
-        comments: 12,
-        image: "/category_items_grid_1776879288073.png"
+        title: "Latest: Sanskrit Gondhal Viral!",
+        excerpt: "Our recent Sanskrit cover of 'Chandanam' (Gondhal) has crossed thousands of views. Watch the resonance of ancient rhythm.",
+        date: "April 23, 2026",
+        comments: 24,
+        image: "https://img.youtube.com/vi/KQjo6a8mylA/maxresdefault.jpg"
     }
 ];
 

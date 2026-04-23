@@ -4,8 +4,21 @@ import { motion } from "framer-motion";
 import { Youtube, Image as ImageIcon, Play } from "lucide-react";
 
 const videos = [
-    { title: "Srivalli (Sanskrit Cover)", id: "placeholder1", thumbnail: "https://images.unsplash.com/photo-1514525253344-f814d8742985?auto=format&fit=crop&q=80" },
-    { title: "Naatu Naatu (Sanskrit Cover)", id: "placeholder2", thumbnail: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80" },
+    { 
+        title: "Chandanam (Marathi Song in Sanskrit)", 
+        id: "KQjo6a8mylA", 
+        thumbnail: "https://img.youtube.com/vi/KQjo6a8mylA/maxresdefault.jpg" 
+    },
+    { 
+        title: "Hamara Bajaj (Ad in Sanskrit)", 
+        id: "XeOjvZqiZOk", 
+        thumbnail: "https://img.youtube.com/vi/XeOjvZqiZOk/maxresdefault.jpg" 
+    },
+    { 
+        title: "Abhang Tukaram Movie Teaser", 
+        id: "3NjQN4up2v8", 
+        thumbnail: "https://img.youtube.com/vi/3NjQN4up2v8/maxresdefault.jpg" 
+    },
 ];
 
 const galleryImages = [
@@ -28,11 +41,11 @@ export function MediaHub() {
                 </div>
 
                 {/* YouTube Section */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-24">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
                     {videos.map((vid, idx) => (
                         <motion.div 
                             key={idx}
-                            whileHover={{ scale: 1.02 }}
+                            onClick={() => window.open(`https://youtube.com/watch?v=${vid.id}`, '_blank')}
                             className="relative aspect-video rounded-[2.5rem] overflow-hidden shadow-2xl group cursor-pointer border-4 border-white/50"
                         >
                             <img src={vid.thumbnail} alt={vid.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />

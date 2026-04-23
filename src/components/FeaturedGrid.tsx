@@ -9,14 +9,14 @@ import { Heart, RefreshCw, ShoppingCart } from "lucide-react";
 const tabs = ["All", "Courses", "Music", "Shop"];
 
 const products = [
-    { id: 1, category: "Courses", title: "Introduction to Vedas", image: "/category_items_grid_1776879288073.png", price: "$29.00" },
-    { id: 2, category: "Music", title: "Sitar Serenity", image: "/category_items_grid_1776879288073.png", price: "$15.00" },
-    { id: 3, category: "Shop", title: "Golden Ink Pen", image: "/category_items_grid_1776879288073.png", price: "$12.00" },
-    { id: 4, category: "Courses", title: "Sanskrit Grammar", image: "/category_items_grid_1776879288073.png", price: "$49.00" },
-    { id: 5, category: "Music", title: "Vedic Chants", image: "/category_items_grid_1776879288073.png", price: "$10.00" },
-    { id: 6, category: "Shop", title: "Parchment Bundle", image: "/category_items_grid_1776879288073.png", price: "$18.00" },
-    { id: 7, category: "Courses", title: "Bhagavad Gita Study", image: "/category_items_grid_1776879288073.png", price: "$35.00" },
-    { id: 8, category: "Shop", title: "Meditation Bowl", image: "/category_items_grid_1776879288073.png", price: "$55.00" },
+    { id: 1, category: "Courses", title: "Fun with Sanskrit", image: "/category_items_grid_1776879288073.png", price: "Enrolling Now" },
+    { id: 2, category: "Music", title: "Chandanam Gondhal", image: "https://img.youtube.com/vi/KQjo6a8mylA/maxresdefault.jpg", price: "Free on YT" },
+    { id: 3, category: "Shop", title: "Sanskrit Thesis Book", image: "/category_items_grid_1776879288073.png", price: "₹500.00" },
+    { id: 4, category: "Courses", title: "Advanced Grammar", image: "/category_items_grid_1776879288073.png", price: "Contact Us" },
+    { id: 5, category: "Music", title: "Abhang Tukaram", image: "https://img.youtube.com/vi/3NjQN4up2v8/maxresdefault.jpg", price: "Exclusive" },
+    { id: 6, category: "Shop", title: "Musical Drama Ticket", image: "/category_items_grid_1776879288073.png", price: "Available" },
+    { id: 7, category: "Courses", title: "Vedic Chants Masterclass", image: "/category_items_grid_1776879288073.png", price: "Upcoming" },
+    { id: 8, category: "Music", title: "Hamara Bajaj Cover", image: "https://img.youtube.com/vi/XeOjvZqiZOk/maxresdefault.jpg", price: "Viral HIT" },
 ];
 
 export default function FeaturedGrid() {

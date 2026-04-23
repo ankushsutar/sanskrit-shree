@@ -5,10 +5,10 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 const categories = [
-    { title: "Vedas", image: "/category_items_grid_1776879288073.png", href: "/courses" },
-    { title: "Sitar Melodies", image: "/category_items_grid_1776879288073.png", href: "/media" },
-    { title: "Sacred Shlokas", image: "/category_items_grid_1776879288073.png", href: "/shop" },
-    { title: "Vedic Wisdom", image: "/category_items_grid_1776879288073.png", href: "/blog" },
+    { title: "Sanskrit Covers", image: "https://img.youtube.com/vi/KQjo6a8mylA/maxresdefault.jpg", href: "/media" },
+    { title: "Courses", image: "/category_items_grid_1776879288073.png", href: "/courses" },
+    { title: "Publications", image: "/category_items_grid_1776879288073.png", href: "/shop" },
+    { title: "Live Drama", image: "https://img.youtube.com/vi/3NjQN4up2v8/maxresdefault.jpg", href: "/media" },
 ];
 
 export default function CategoryCarousel() {
