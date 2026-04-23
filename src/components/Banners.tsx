@@ -33,7 +33,7 @@ export default function Banners() {
                             src="/promotional_banners_duo_1776879326835.png" 
                             alt="Sacred Melodies" 
                             fill 
-                            className="object-cover -scale-x-100 transition-transform duration-700 group-hover:scale-[-1.05]"
+                            className="object-cover transition-transform duration-700 group-hover:scale-105"
                         />
                         <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors" />
                         <div className="absolute inset-y-0 left-8 flex flex-col justify-center max-w-[200px] z-10">

@@ -8,12 +8,9 @@ export default function Hero() {
   return (
     <section className="bg-white pb-12">
       <div className="ogani-container">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-          {/* Left Column Placeholder (for the Categories menu in Navbar) */}
-          <div className="hidden lg:block lg:col-span-3" />
-
+        <div className="grid grid-cols-1 gap-8">
           {/* Main Slider Area */}
-          <div className="lg:col-span-9">
+          <div className="w-full">
             <div className="relative h-[430px] w-full overflow-hidden group">
                {/* Background Image */}
                <Image 

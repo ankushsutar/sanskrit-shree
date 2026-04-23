@@ -9,14 +9,14 @@ import { Heart, RefreshCw, ShoppingCart } from "lucide-react";
 const tabs = ["All", "Courses", "Music", "Shop"];
 
 const products = [
-    { id: 1, category: "Courses", title: "Fun with Sanskrit", image: "/category_items_grid_1776879288073.png", price: "Enrolling Now" },
-    { id: 2, category: "Music", title: "Chandanam Gondhal", image: "https://img.youtube.com/vi/KQjo6a8mylA/maxresdefault.jpg", price: "Free on YT" },
-    { id: 3, category: "Shop", title: "Sanskrit Thesis Book", image: "/category_items_grid_1776879288073.png", price: "₹500.00" },
-    { id: 4, category: "Courses", title: "Advanced Grammar", image: "/category_items_grid_1776879288073.png", price: "Contact Us" },
-    { id: 5, category: "Music", title: "Abhang Tukaram", image: "https://img.youtube.com/vi/3NjQN4up2v8/maxresdefault.jpg", price: "Exclusive" },
-    { id: 6, category: "Shop", title: "Musical Drama Ticket", image: "/category_items_grid_1776879288073.png", price: "Available" },
-    { id: 7, category: "Courses", title: "Vedic Chants Masterclass", image: "/category_items_grid_1776879288073.png", price: "Upcoming" },
-    { id: 8, category: "Music", title: "Hamara Bajaj Cover", image: "https://img.youtube.com/vi/XeOjvZqiZOk/maxresdefault.jpg", price: "Viral HIT" },
+    { id: 1, category: "Courses", title: "Fun with Sanskrit", image: "https://images.unsplash.com/photo-1544640808-32ca72ac7f67?auto=format&fit=crop&q=80", price: "Enrolling Now" },
+    { id: 2, category: "Music", title: "Chandanam Gondhal", image: "https://img.youtube.com/vi/KQjo6a8mylA/hqdefault.jpg", price: "Free on YT" },
+    { id: 3, category: "Shop", title: "Sanskrit Thesis Book", image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&q=80", price: "₹500.00" },
+    { id: 4, category: "Courses", title: "Advanced Grammar", image: "https://images.unsplash.com/photo-1509021453782-08c17c44633e?auto=format&fit=crop&q=80", price: "Contact Us" },
+    { id: 5, category: "Music", title: "Abhang Tukaram", image: "https://img.youtube.com/vi/3NjQN4up2v8/hqdefault.jpg", price: "Exclusive" },
+    { id: 6, category: "Shop", title: "Musical Drama Ticket", image: "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&q=80", price: "Available" },
+    { id: 7, category: "Courses", title: "Vedic Chants Masterclass", image: "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&q=80", price: "Upcoming" },
+    { id: 8, category: "Music", title: "Hamara Bajaj Cover", image: "https://img.youtube.com/vi/XeOjvZqiZOk/hqdefault.jpg", price: "Viral HIT" },
 ];
 
 export default function FeaturedGrid() {

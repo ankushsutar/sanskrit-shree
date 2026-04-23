@@ -19,7 +19,6 @@ const navLinks = [
 export function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    const [isDeptOpen, setIsDeptOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -120,58 +119,6 @@ export function Navbar() {
                     </div>
                 </div>
 
-                {/* Sub Header (Category Search - Visible only on Home or when persistent) */}
-                <div className="ogani-container mt-4 hidden lg:grid grid-cols-12 gap-8 items-start">
-                    {/* All Departments Dropdown */}
-                    <div className="col-span-3 relative">
-                        <button 
-                            onClick={() => setIsDeptOpen(!isDeptOpen)}
-                            className="w-full bg-peacock text-white flex items-center justify-between px-6 py-3 font-black text-[14px] uppercase tracking-wider"
-                        >
-                            <div className="flex items-center space-x-3">
-                                <Menu size={20} />
-                                <span>All Shastras</span>
-                            </div>
-                            <ChevronDown size={18} className={cn("transition-transform", isDeptOpen && "rotate-180")} />
-                        </button>
-                        <AnimatePresence>
-                            {isDeptOpen && (
-                                <motion.ul 
-                                    initial={{ height: 0, opacity: 0 }}
-                                    animate={{ height: "auto", opacity: 1 }}
-                                    exit={{ height: 0, opacity: 0 }}
-                                    className="absolute top-full left-0 right-0 bg-white border border-peacock/10 shadow-lg overflow-hidden py-2"
-                                >
-                                    {["Vedas & Upanishads", "Bhagavad Gita", "Stotrams & Hymns", "Sanskrit Courses", "Grammar (Vyakarana)", "Meditation & Yoga"].map((item) => (
-                                        <li key={item}>
-                                            <Link href="#" className="block px-6 py-2 text-[14px] text-peacock/80 hover:text-gold hover:bg-peacock/5 transition-all">
-                                                {item}
-                                            </Link>
-                                        </li>
-                                    ))}
-                                </motion.ul>
-                            )}
-                        </AnimatePresence>
-                    </div>
-
-                    {/* Search & Contact Bar */}
-                    <div className="col-span-9 flex items-center space-x-4">
-                        <div className="flex-1 flex items-center border border-peacock/10 overflow-hidden">
-                            <div className="px-6 py-3 border-r border-peacock/10 flex items-center space-x-2 font-bold text-[14px] text-peacock shrink-0">
-                                <span>All Resources</span>
-                                <ChevronDown size={14} />
-                            </div>
-                            <input 
-                                type="text" 
-                                placeholder="Search Shlokas, Courses, or Songs..." 
-                                className="flex-1 px-6 py-3 text-[14px] outline-none"
-                            />
-                            <button className="bg-maroon text-white px-8 py-3 font-black text-[14px] uppercase tracking-widest hover:bg-gold transition-colors">
-                                Search
-                            </button>
-                        </div>
-                    </div>
-                </div>
 
                 {/* Mobile Menu Overlay */}
                 <AnimatePresence>

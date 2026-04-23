@@ -7,17 +7,17 @@ const videos = [
     { 
         title: "Chandanam (Marathi Song in Sanskrit)", 
         id: "KQjo6a8mylA", 
-        thumbnail: "https://img.youtube.com/vi/KQjo6a8mylA/maxresdefault.jpg" 
+        thumbnail: "https://img.youtube.com/vi/KQjo6a8mylA/hqdefault.jpg" 
     },
     { 
         title: "Hamara Bajaj (Ad in Sanskrit)", 
         id: "XeOjvZqiZOk", 
-        thumbnail: "https://img.youtube.com/vi/XeOjvZqiZOk/maxresdefault.jpg" 
+        thumbnail: "https://img.youtube.com/vi/XeOjvZqiZOk/hqdefault.jpg" 
     },
     { 
         title: "Abhang Tukaram Movie Teaser", 
         id: "3NjQN4up2v8", 
-        thumbnail: "https://img.youtube.com/vi/3NjQN4up2v8/maxresdefault.jpg" 
+        thumbnail: "https://img.youtube.com/vi/3NjQN4up2v8/hqdefault.jpg" 
     },
 ];
 

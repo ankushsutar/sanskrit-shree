@@ -33,6 +33,9 @@ import LeadCapture from "@/components/LeadCapture";
 export const metadata: Metadata = {
     title: "Sanskrit Shree | Where Every Song Finds Its Ancient Soul",
     description: "Reimagining popular songs from all languages as classical Sanskrit compositions.",
+    icons: {
+        icon: "/logo.jpg",
+    },
 };
 
 export default function RootLayout({
